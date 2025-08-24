@@ -1,7 +1,42 @@
 /*  your css code here. If applicable */
-h2{
-	text-align: center
-	color: black
-	margin:auto
-	padding: auto
+body{
+	background-color: rgb(204,204,204)
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+#box {
+  padding: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.player_one,
+.player_two {
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 10px;
+  width: 500px;
+  margin: 15px auto;
+  text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color:blue;
+	font-weight: 500;
+}
+
+a:hover{
+	text-decoration: underline;
 }
