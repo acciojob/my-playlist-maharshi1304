@@ -1,52 +1,6 @@
-/*  your css code here. If applicable */
-/* body{
-	background-color: rgb(204,204,204)
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-h2 {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
-
-#box {
-  padding: 10px;
-  max-width: 600px;
-  margin: 0 auto;
-  background-color: white;
-}
-
-.player_one,
-.player_two {
-  background-color: rgb(255, 255, 255);
-  padding: 15px;
-  border-radius: 10px;
-  width: 500px;
-  margin: 15px auto;
-  text-align: center;
-}
-
-a{
-	text-decoration: none;
-	color:blue;
-	font-weight: 500;
-}
-
-a:hover{
-	text-decoration: underline;
-}
-
-
- */
-
-/* General body styling */
+/*style*/
 body {
-  background-color: rgb(204, 204, 204);
+  background-color: rgb(204,204,204);
   font-family: Arial, sans-serif;
   margin: 20px;
   text-align: center;
@@ -64,47 +18,74 @@ h2 {
 }
 
 /* Playlist box */
-ul {
+#box {
   background-color: white;
   padding: 15px;
   border: 2px solid black;
   border-radius: 8px;
-  max-width: 400px;
+  max-width: 800px;
   margin: 0 auto 20px auto;
   text-align: left;
 }
 
-li {
-  list-style-type: none;
+#box ul {
+  padding: 0;
+}
+
+#box li {
   margin: 8px 0;
 }
 
-a {
+#box a {
   text-decoration: none;
-  color: darkblue;
-  font-weight: bold;
+  color: black;
+  font-weight: normal;
 }
 
-a:hover {
+/* #box a:hover {
   text-decoration: underline;
-}
+  color: darkred;
+} */
 
 /* Media player containers */
-.player_one,
-.player_two {
-  background-color: white;
-  padding: 15px;
+/* Container for video + audio section */
+#box2 {
+  background-color: rgb(255,255,255);
+  padding: 20px;
   border: 2px solid black;
-  border-radius: 10px;
-  width: 450px;
-  margin: 15px auto;
-  text-align: center;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 20px auto;
+  /* text-align: center; */
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
 }
 
-/* Video styling */
-video {
+/* Heading inside box2 */
+#box2 h2 {
+  margin-top: 5px;
+  /* margin-bottom: 10px; */
+  color: #222;
+}
+p{
+	text-align:start;
+}
+
+
+/* Video element */
+.player_one video {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 0px;
 }
 
+/* Audio element */
+.player_two audio {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* Paragraph for song title */
+#box2 p {
+  font-weight: normal;
+  margin: 10px 0;
+  color: #444;
+}
